@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Mark Weigel's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/mystyles.css">
+  </head>
+            <!-- Credit for the camera logo
+    <div>Icons made by <a href="http://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+  -->
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="row">
+        <picture class="header-logo">
+          <img src="images_src/camera44.svg" alt="logo">
+        </picture>
+        <div class="header-text">
+          <h1>Mark Weigel</h1>
+          <h2>Wannabe Ninja</h2>
+        </div>
+      </header>
+      <hr>
+      <!-- Banner -->
+      <picture class="row banner">
+        <source media="(max-width: 287px)"
+                srcset="images/glassy-465.jpg 2x,
+                        images/glassy-260.jpg 1x"
+                type="image/jpg">
+        <source media="(max-width: 516px)"
+                srcset="images/glassy-1150.jpg 2x,
+                        images/glassy-465.jpg 1x"
+                type="image/jpg">
+        <source media="(max-width: 800px)"
+                srcset="images/glassy-2300.jpg 2x,
+                        images/glassy-800.jpg 1x"
+                type="image/jpg">
+        <source media="(min-width: 801px)"
+                srcset="images/glassy-2300.jpg 2x,
+                        images/glassy-1150.jpg 1x"
+                type="image/jpg">
+        <img src="images/glassy-1150.jpg"
+             alt="a small river captured with a slow shutter giving it a glassy appearance">
+      </picture>
+      <main>
+        <!-- Main Header -->
+        <header class="row">
+          <h3 class="muted-text">Featured Work</h3>
+        </header>
+        <!-- Main Content -->
+        <article class="row apps">
+          <section class="app">
+            <picture class="app-pic">
+              <source
+                media="(max-width: 287px)"
+                srcset="images/toshi-cropped-465.jpg 2x,
+                        images/toshi-cropped-260.jpg 1x"
+                type="image/jpg">
+              <source
+                media="(max-width: 499px)"
+                srcset="images/toshi-800.jpg 2x,
+                        images/toshi-465.jpg 1x"
+                type="image/jpg">
+              <source
+                media="(min-width: 500px) and (max-width: 600px)"
+                srcset="images/toshi-cropped-800.jpg 2x,
+                        images/toshi-cropped-465.jpg 1x"
+                type="image/jpg">
+              <source
+                media="(min-width: 601px)"
+                srcset="images/toshi-800.jpg 2x,
+                        images/toshi-465.jpg 1x"
+                type="image/jpg">
+              <img src="images/toshi-1150.jpg" alt="My dog, Toshi, sunbathing on our bench">
+            </picture>
+            <h4>Toshi</h4>
+            <a href="http://weigel.site">https://weigel.site/toshi-sunbathing</a>
+          </section>
+          <section class="app">
+            <picture class="app-pic">
+              <source
+                media="(max-width: 287px)"
+                srcset="images/buddha-cropped-465.jpg 2x,
+                        images/buddha-cropped-260.jpg 1x"
+                type="image/jpg">
+              <source
+                media="(min-width: 288px) and (max-width: 600px)"
+                srcset="images/buddha-800.jpg 2x,
+                        images/buddha-465.jpg 1x"
+                type="image/jpg">
+              <source
+                media="(min-width: 601px)"
+                srcset="images/buddha-800.jpg 2x,
+                        images/buddha-465.jpg 1x"
+                type="image/jpg">
+              <img src="images/buddha-1150.jpg"
+                   alt="This is a picture of a Buddha statue where I messed with light color temperatures and made the bricks appear blue">
+            </picture>
+            <h4>Buddha</h4>
+            <a href="http://weigel.site">https://weigel.site/buddha-color-temperature</a>
+          </section>
+          <section class="app">
+            <picture class="app-pic">
+              <source
+                media="(max-width: 287px)"
+                srcset="images/windows-cropped-465.jpg 2x,
+                        images/windows-cropped-260.jpg 1x"
+                type="image/jpg">
+              <source
+                media="(max-width: 599px)"
+                srcset="images/windows-800.jpg 2x,
+                        images/windows-465.jpg 1x"
+                type="image/jpg">
+              <source
+                media="(min-width: 500px) and (max-width: 600px)"
+                srcset="images/windows-cropped-800.jpg 2x,
+                        images/windows-cropped-465.jpg 1x"
+                type="image/jpg">
+              <source
+                media="(min-width: 601px)"
+                srcset="images/windows-800.jpg 2x,
+                        images/windows-465.jpg 1x"
+                type="image/jpg">
+              <img src="images/windows-1150.jpg"
+                   alt="A picture of my living room that was used for AirBnB">
+            </picture>
+            <h4>Living Room</h4>
+            <a href="http://weigel.site">https://weigel.site/my-living-room</a>
+          </section>
+        </article>
+      </main>
+      <footer>
+        <a href="https://www.facebook.com/mark.weigel.9">
+          <!-- Messy SVG code in here (Inlined for fewer HTTP requests) -->
+          <div class="social">
+            <!-- SVG Code courtesy of http://tinktank.in/free-flat-social-icons/ -->
+            <svg viewBox="0 0 61 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Facebook" transform="translate(0.000000, 0.000000)">
+                <path d="M0.11416185,30 C0.11416185,13.4314567 13.5650282,0 30.1575145,0 C46.7500007,0 60.2008671,13.4314567 60.2008671,30 C60.2008671,46.5685433 46.7500007,60 30.1575145,60 C13.5650282,60 0.11416185,46.5685433 0.11416185,30 Z M0.11416185,30" fill="#3B5998"></path>
+                <path d="M32.6697148,46.3196729 L32.6697148,29.9980891 L37.1751858,29.9980891 L37.772258,24.3735809 L32.6697148,24.3735809 L32.6773696,21.5584604 C32.6773696,20.091502 32.8167502,19.3054722 34.9237261,19.3054722 L37.7403631,19.3054722 L37.7403631,13.6803271 L33.2342542,13.6803271 C27.8216928,13.6803271 25.9166115,16.4088187 25.9166115,20.9972835 L25.9166115,24.3742179 L22.5427709,24.3742179 L22.5427709,29.998726 L25.9166115,29.998726 L25.9166115,46.3196729 L32.6697148,46.3196729 Z M32.6697148,46.3196729" id="Path" fill="#FFFFFF"></path>
+                <path d="M60.2008671,30 C60.2008671,46.5685433 46.7500007,60 30.1575145,60 C24.0037543,60 18.2821216,58.1525134 13.5186513,54.9827754 L47.9432097,5.81941103 C55.3769726,11.2806503 60.2008671,20.0777973 60.2008671,30 Z M60.2008671,30" id="reflec" fill-opacity="0.08" fill="#000000"></path>
+              </g>
+            </svg>
+          </div>
+        </a>
+        <a href="https://plus.google.com/u/0/+MarkWeigel/posts">
+          <!-- Messy SVG code in here -->
+          <div class="social">
+            <!-- SVG Code courtesy of http://tinktank.in/free-flat-social-icons/ -->
+            <svg viewBox="0 0 61 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Googleplus" transform="translate(0.000000, 0.000000)">
+                <path d="M0.11416185,30 C0.11416185,13.4314567 13.5650282,1.42108547e-14 30.1575145,1.42108547e-14 C46.7500007,1.42108547e-14 60.2008671,13.4314567 60.2008671,30 C60.2008671,46.5685433 46.7500007,60 30.1575145,60 C13.5650282,60 0.11416185,46.5685433 0.11416185,30 Z M0.11416185,30" fill="#D34836"></path>
+                <path d="M59.2673633,23.0943 L52.162718,23.0943 L52.162718,30.977028 L48.81389,30.977028 L48.81389,23.0943 L41,23.0943 L41,19.81347 L48.81389,19.81347 L48.81389,12 L52.162718,12 L52.162718,19.81347 L58.1281705,19.81347 C58.5687694,20.8776397 58.9498961,21.9726805 59.2673633,23.0943 Z M59.2673633,23.0943" id="Shape" fill="#FFFFFF"></path>
+                <path d="M8.36751114,49.4151658 C9.20757641,48.0045129 10.5101616,46.6176234 12.439863,45.4779226 C16.7939334,42.8139603 22.6580861,42.4621162 25.8292588,42.2610624 C24.8477054,41.0044764 23.7151437,39.6724953 23.7151437,37.4860357 C23.7151437,36.3048449 24.0674962,35.6011567 24.4198487,34.77181 C23.6396396,34.8472051 22.8845985,34.9226003 22.1798934,34.9226003 C14.7553224,34.9226003 10.5522602,29.3936219 10.5522602,23.9400388 C10.5522602,20.7231786 12.0371744,17.1494481 15.0321708,14.5633941 C19.0338888,11.2786783 23.7906478,10.718241 27.5658534,10.718241 L41.9871387,10.718241 L37.5072281,13.2339261 L33.1783257,13.2339261 C34.7890801,14.5633941 38.136429,17.3605545 38.136429,22.6834528 C38.136429,27.860587 35.1917687,30.2983638 32.2722764,32.6104821 C31.341059,33.515224 30.3091694,34.495361 30.3091694,36.0283959 C30.3091694,37.5614308 31.341059,38.4159093 32.1212681,39.0442023 L34.6380719,41.0044764 C37.7337404,43.5679119 40.5273926,45.9554252 40.5273926,50.7807154 C40.5273926,53.9628155 39.0402571,57.1566546 36.1426841,59.6077057 C34.5836462,59.8615138 32.9843015,59.9954999 31.3544396,59.9998886 C34.2967013,58.7111083 35.8209696,56.3530765 35.8209696,53.5200729 C35.8209696,49.9513687 33.5306782,48.0664897 28.1950543,44.2716 C27.6413575,44.2213366 27.289005,44.2213366 26.5842999,44.2213366 C25.955099,44.2213366 22.1798934,44.3469952 19.2352331,45.3271322 C17.6999828,45.8800301 13.2200722,47.5638553 13.2200722,52.5399358 C13.2200722,53.0807141 13.2777239,53.6050014 13.3902067,54.1099484 C6.01085155,48.6437279 9.20757647,49.4151671 8.36751114,49.4151658 Z M31.9702599,25.9003129 C31.9702599,20.8488372 28.9752635,13.0253329 23.1614469,13.0253329 C21.3493482,13.0253329 19.3862413,13.9351011 18.2536796,15.3349379 C17.0707819,16.8026303 16.7184293,18.6875093 16.7184293,20.4969931 C16.7184293,25.1966247 19.4365774,32.9623261 25.4769063,32.9623261 C27.2135009,32.9623261 29.1011037,32.1078477 30.2336653,31.002052 C31.8444197,29.3936219 31.9702599,27.1568989 31.9702599,25.9003129 Z M31.9702599,25.9003129" id="Path2" fill="#FFFFFF"></path>
+                <path d="M60.2673633,30.180589 C60.2673633,46.7491323 46.816497,60.180589 30.2240107,60.180589 C24.0702505,60.180589 18.3486179,58.3331023 13.5851475,55.1633644 L48.0097059,6 C55.4434689,11.4612393 60.2673633,20.2583863 60.2673633,30.180589 Z M60.2673633,30.180589" id="reflec2" fill-opacity="0.08" fill="#000000"></path>
+              </g>
+            </svg>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/markweig">
+          <!-- Messy SVG code in here -->
+          <div class="social">
+            <!-- SVG Code courtesy of http://tinktank.in/free-flat-social-icons/ -->
+            <svg viewBox="0 0 61 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="LinkedIN" transform="translate(0.000000, 0.000000)">
+                <path d="M0.456647399,30 C0.456647399,13.4314567 13.9075137,0 30.5,0 C47.0924863,0 60.5433526,13.4314567 60.5433526,30 C60.5433526,46.5685433 47.0924863,60 30.5,60 C13.9075137,60 0.456647399,46.5685433 0.456647399,30 Z M0.456647399,30" fill="#007BB6"></path>
+                <path d="M22.8425065,23.7098144 L16.0438505,23.7098144 L16.0438505,44.1369537 L22.8425065,44.1369537 L22.8425065,23.7098144 Z M22.8425065,23.7098144" id="Path3" fill="#FFFFFF"></path>
+                <path d="M23.2902832,17.3908761 C23.2461572,15.3880081 21.8138965,13.862504 19.4881191,13.862504 C17.1623417,13.862504 15.6418291,15.3880081 15.6418291,17.3908761 C15.6418291,19.3522579 17.1174011,20.9216886 19.3998672,20.9216886 L19.4433143,20.9216886 C21.8138965,20.9216886 23.2902832,19.3522579 23.2902832,17.3908761 Z M23.2902832,17.3908761" id="Path3b" fill="#FFFFFF"></path>
+                <path d="M47.3610611,32.4246563 C47.3610611,26.1503226 44.007081,23.2301456 39.5332519,23.2301456 C35.9236128,23.2301456 34.3075166,25.2128128 33.4051747,26.6036896 L33.4051747,23.7103567 L26.605704,23.7103567 C26.6953136,25.6271338 26.605704,44.137496 26.605704,44.137496 L33.4051747,44.137496 L33.4051747,32.7292961 C33.4051747,32.1187963 33.4493006,31.5097877 33.629063,31.0726898 C34.1204225,29.8530458 35.2391853,28.5902885 37.1174576,28.5902885 C39.5785998,28.5902885 40.562405,30.4634101 40.562405,33.2084226 L40.562405,44.1369537 L47.3607895,44.1369537 L47.3610611,32.4246563 Z M47.3610611,32.4246563" id="Path3a" fill="#FFFFFF"></path>
+                <path d="M60.5433526,30 C60.5433526,46.5685433 47.0924863,60 30.5,60 C24.3462399,60 18.6246072,58.1525134 13.8611369,54.9827754 L48.2856952,5.81941103 C55.7194582,11.2806503 60.5433526,20.0777973 60.5433526,30 Z M60.5433526,30" id="reflec3" fill-opacity="0.08" fill="#000000"></path>
+              </g>
+            </svg>
+          </div>
+        </a>
+      </footer>
+    </div>
+  </body>
+</html>
