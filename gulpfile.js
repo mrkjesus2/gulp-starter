@@ -16,10 +16,10 @@ var gulp = require('gulp'),
 
 // Set your paths here
 var paths = {
-	scripts: ['src/js/*.js'],
-	styles: ['src/css/*.css'],
-	images: ['src/images-src/*'],
-	content: ['src/index.html', 'src/index-bad.html']
+	scripts: ['js/*.js'],
+	styles: ['css/*.css'],
+	images: ['images/*'],
+	content: ['index.html']
 }
 
 var dist = {
@@ -79,33 +79,33 @@ gulp.task('jshint', function(){
 });
 
 
-// Images
+// Images commented out for Ali's project, don't want resizing happening unintetionally
 
-gulp.task('resizeImages', function(){
-	gulp.src(paths.images)
-		.pipe(changed('src/images/'))
-		.pipe(imageResize({
-			width : 1920,
-			height : 0,
-			crop : true,
-			imageMagick : true
-		}))
-		// TODO: add gulp-imagemin?
-		.pipe(rename(function(path){
-			path.basename += '@2x';
-		}))
-		.pipe(gulp.dest('src/images/'))
-		.pipe(imageResize({
-			width : 100,
-			height : 0,
-			crop : true,
-			imageMagick : true
-		}))
-		.pipe(rename(function(path){
-			path.basename += '@1x';
-		}))
-		.pipe(gulp.dest('src/images/'));
-});
+// gulp.task('resizeImages', function(){
+// 	gulp.src(paths.images)
+// 		.pipe(changed('src/images/'))
+// 		.pipe(imageResize({
+// 			width : 1920,
+// 			height : 0,
+// 			crop : true,
+// 			imageMagick : true
+// 		}))
+// 		// TODO: add gulp-imagemin?
+// 		.pipe(rename(function(path){
+// 			path.basename += '@2x';
+// 		}))
+// 		.pipe(gulp.dest('src/images/'))
+// 		.pipe(imageResize({
+// 			width : 100,
+// 			height : 0,
+// 			crop : true,
+// 			imageMagick : true
+// 		}))
+// 		.pipe(rename(function(path){
+// 			path.basename += '@1x';
+// 		}))
+// 		.pipe(gulp.dest('src/images/'));
+// });
 
 // Thought it may be helpful to have the imageResize options here(Values listed are default):
 
